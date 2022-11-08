@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adidas</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid m-2">
+        <a class="navbar-brand" href="#">
+          <img
+            src="adidas-logo.png"
+            alt="Logo"
+            class="nav-logo d-inline-block align-text-middle"
+        /></a>
+        <div class="navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav collapse navbar-collapse">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kids</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Title -->
+    <section>
+      <div class="row">
+        <div class="bg-div container-fluid">
+          <img class="bg-image" src="bg-image.jpg" alt="" />
+        </div>
+        <div class="col">
+          <button class="button-54" role="button">Shop Collection</button>
+          <button class="button-54" style="top: 270px" role="button">
+            Shop Men
+          </button>
+          <button class="button-54" style="top: 320px" role="button">
+            Shop Women
+          </button>
+          <h1 class="bg-image-text">Comfort That <br />Keeps Up</h1>
+        </div>
+      </div>
+    </section>
+    <!-- 2nd Part -->
+    <section>
+      <div class="container-fluid row mid-div">
+        <h1 class="head-2">Who are you shopping for?</h1>
+        <div class="container-fluid column col">
+          <a href=""><img class="mid-div-img" src="adidas-men.jpg" alt="" /></a>
+          <h3 class="mid-img-text-1">Men</h3>
+        </div>
+        <div class="container-fluid column col">
+          <a href=""
+            ><img class="mid-div-img" src="adidas-women.jpg" alt=""
+          /></a>
+          <h3 class="mid-img-text-2">Women</h3>
+        </div>
+        <div class="column col">
+          <a href=""
+            ><img class="mid-div-img" src="adidas-kids.jpg" alt=""
+          /></a>
+          <h3 class="mid-img-text-3">Kids</h3>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <hr />
+      <div>
+        <ul class="nav nav-tabs">
+          <li class="nav-item" onclick="openCity(event, 'new-arrivals')">
+            <a href="#new-arrivals" class="nav-link active">New Arrivals</a>
+          </li>
+          <li class="nav-item" onclick="openCity(event, 'Whats-Trending')">
+            <a class="nav-link" href="#Whats-Trending">What's Trending</a>
+          </li>
+          <li
+            class="nav-item dark"
+            onclick="openCity(event, 'Member-Exclusive')"
+          >
+            <a class="nav-link" href="#Member-Exclusive">Member Exclusive</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+    </section>
+
+    <div id="new-arrivals" class="tabcontent">
+      <!-- Item slider-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div
+              class="carousel carousel-showmanymoveone slide"
+              id="itemslider"
+            >
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_600,f_auto,q_auto/b137c66299114c1b8cdaaed300ced47f_9366/Samba_OG_Shoes_Blue_HP7901_01_standard.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Samba OG Shoes</h7>
+                      <br />
+                      <h9 style="font-style: oblique">Men's Orignal</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_600,f_auto,q_auto/a14b7fedab344e53a6abaed300cf71bd_9366/Samba_OG_Shoes_Brown_HP7903_01_standard.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Samba OG Shoes</h7>
+                      <br />
+                      <h9 style="font-style: oblique">Men's Orignal</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_600,f_auto,q_auto/bb21eb8a74e64fe09338aed300ce75ad_9366/Samba_OG_Shoes_Orange_HP7898_01_standard.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Samba OG Shoes</h7>
+                      <br />
+                      <h9 style="font-style: oblique">Men's Orignal</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7bcefd54671c420989b6aed300cf131c_9366/Samba_OG_Shoes_Green_HP7902_01_standard.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Samba OG Shoes</h7>
+                      <br />
+                      <h9 style="font-style: oblique">Men's Orignal</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_600,f_auto,q_auto/87ecb55483cc4195a500aeef00f4751c_9366/Superstar_360_2.0_Boots_Black_GX9079_01_standard.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Superstar 360 2.0 Boots</h7>
+                      <br />
+                      <h9 style="font-style: oblique">Men's Orignal</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7b5779dd18f7473c89dcaf2901053ddf_9366/Adicolor_Classics_Suede_Track_Pants_Red_HM1690_21_model.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>SST Track Top</h7>
+                      <br />
+                      <h9 style="font-style: oblique">Women's Orignal</h9>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="slider-control">
+                <a
+                  class="left carousel-control"
+                  href="#itemslider"
+                  data-slide="prev"
+                  ><img
+                    src="https://pixsector.com/cache/a8009c95/av8a49a4f81c3318dc69d.png"
+                    alt="Left"
+                    class="img-responsive"
+                /></a>
+                <a
+                  class="right carousel-control"
+                  href="#itemslider"
+                  data-slide="next"
+                  ><img
+                    src="http://pixsector.com/cache/81183b13/avcc910c4ee5888b858fe.png"
+                    alt="Right"
+                    class="img-responsive"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Whats-Trending" class="tabcontent">
+      <!-- Item slider-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div
+              class="carousel carousel-showmanymoveone slide"
+              id="itemslider"
+            >
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/7bcefd54671c420989b6aed300cf131c_9366/HP7902_01_standard.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Samba OG Shoes</h7>
+                      <br />
+                      <h9>Orignals</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/a14b7fedab344e53a6abaed300cf71bd_9366/HP7903_01_standard.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Samba OG Shoes</h7>
+                      <br />
+                      <h9>Orignals</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/ded7958c612642cf95e1ae99011791be_9366/HP7905_01_standard.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Samba OG Shoes</h7>
+                      <br />
+                      <h9> Orignals</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/a66fbcc4a6fc46eca974aedd00f4f6ed_9366/HQ7036_01_standard.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Samba OG Shoes</h7>
+                      <br />
+                      <h9>Orignals</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/2dd15621212c4818b828aeef00df1ebe_9366/GX4579_01_standard.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>TRX Vintage Shoes</h7>
+                      <br />
+                      <h9>Orignals</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/7374d2fc2fb14692a2f0ae6e00071dfb_9366/GY6940_01_standard.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Samba ADV Shoes</h7>
+                      <br />
+                      <h9>Men's Orignal</h9>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="slider-control">
+                <a
+                  class="left carousel-control"
+                  href="#itemslider"
+                  data-slide="prev"
+                  ><img
+                    src="https://pixsector.com/cache/a8009c95/av8a49a4f81c3318dc69d.png"
+                    alt="Left"
+                    class="img-responsive"
+                /></a>
+                <a
+                  class="right carousel-control"
+                  href="#itemslider"
+                  data-slide="next"
+                  ><img
+                    src="http://pixsector.com/cache/81183b13/avcc910c4ee5888b858fe.png"
+                    alt="Right"
+                    class="img-responsive"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Member-Exclusive" class="tabcontent">
+      <!-- Item slider-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            <div
+              class="carousel carousel-showmanymoveone slide"
+              id="itemslider"
+            >
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_600,f_auto,q_auto/2e645a563c6e417da371ae8c0036ab62_9366/Ultra_4D_Shoes_White_GZ1336_01_standard.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Ultra 4D Shoes</h7>
+                      <br />
+                      <h9 style="font-style: oblique">Running</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_600,f_auto,q_auto/9536a745b13e4c459ee2af3400f45565_9366/Forum_Bold_Shoes_Beige_HQ9135_HM1.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Forum Bold Shoes</h7>
+                      <br />
+                      <h9 style="font-style: oblique">Women's Orignal</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_600,f_auto,q_auto/c90617e52fd34ecc83e8aed70159a1d3_9366/Ultra_4D_Shoes_Black_GY5913_01_standard.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Ultra 4D Shoes</h7>
+                      <br />
+                      <h9 style="font-style: oblique">Men's Running</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_600,f_auto,q_auto/56e4f5bae6f940eaa90dae8c007882e0_9366/Ultraboost_22_Shoes_White_GX9147_01_standard.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Ultraboost 22 Shoes</h7>
+                      <br />
+                      <h9 style="font-style: oblique">Women's Running</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_600,f_auto,q_auto/c8616bb123744533ba20ae750109637d_9366/Disney_Sport_Hoodie_Black_HK9200_21_model.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>Disney Sport Hoodie</h7>
+                      <br />
+                      <h9 style="font-style: oblique">Men's Essensials</h9>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="col-xs-12 col-sm-6 col-md-2">
+                    <a href=""
+                      ><img
+                        src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7b5779dd18f7473c89dcaf2901053ddf_9366/Adicolor_Classics_Suede_Track_Pants_Red_HM1690_21_model.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /></a>
+                    <div class="card-body">
+                      <h7>SST Track Top</h7>
+                      <br />
+                      <h9 style="font-style: oblique">Women's Orignal</h9>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="slider-control">
+                <a
+                  class="left carousel-control"
+                  href="#itemslider"
+                  data-slide="prev"
+                  ><img
+                    src="https://pixsector.com/cache/a8009c95/av8a49a4f81c3318dc69d.png"
+                    alt="Left"
+                    class="img-responsive"
+                /></a>
+                <a
+                  class="right carousel-control"
+                  href="#itemslider"
+                  data-slide="next"
+                  ><img
+                    src="http://pixsector.com/cache/81183b13/avcc910c4ee5888b858fe.png"
+                    alt="Right"
+                    class="img-responsive"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="last-section" style="padding: 50px">
+      <div class="row">
+        <div class="card col">
+          <img
+            src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/FW22_UB22_Coldrdy_TCC_tcm221-959443.jpg"
+            alt="Denim Jeans"
+            style="width: 100%"
+          />
+          <h1 class="card-text">READY FOR ANY WEATHER</h1>
+          <p>
+            Make winter your season with the Ultraboost 22 COLD.RDY, primed to
+            conquer the cold.
+          </p>
+          <p><button>Shop Now</button></p>
+        </div>
+
+        <div class="card col">
+          <img
+            src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/og073-fw22-og-wc-collection-teaser-card-women-v2_tcm221-958783.jpg"
+            alt="Denim Jeans"
+            style="width: 100%"
+          />
+          <h1 class="card-text">STYLE GOALS</h1>
+          <p>
+            Your team, your colors, your style—celebrate the World Cup in this
+            new drop.
+          </p>
+          <p><button>Shop Now</button></p>
+        </div>
+
+        <div class="card col">
+          <img
+            src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/FW22_Trae_2_H06473_Digital_Launch_Homepage_TeaserCarousel_Mobile_tcm221-959445.jpg"
+            alt="Denim Jeans"
+            style="width: 100%"
+          />
+          <h1 class="card-text">BUILT FOR AGILITY</h1>
+          <p>Unleash your court creativity in the Trae 2.</p>
+          <p><button>Shop Now</button></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="row info-div">
+        <div class="col">
+          <a class="info-link" href=""><h4>Help</h4></a>
+          <a class="info-link" href=""> <h4>Return & Exchange</h4></a>
+          <a class="info-link" href=""> <h4>Order Tracker</h4></a>
+          <a class="info-link" href=""> <h4>Shipping</h4></a>
+          <a class="info-link" href=""> <h4>Promotions</h4></a>
+          <a class="info-link" href=""><h4>Black Friday Deals</h4></a>
+        </div>
+        <div class="col">
+          <a class="info-link" href=""> <h4>adiClub</h4></a>
+          <a class="info-link" href=""> <h4>Store Finder</h4></a>
+          <a class="info-link" href=""> <h4>Gift Cards</h4></a>
+          <a class="info-link" href=""> <h4>Addidas Apps</h4></a>
+          <a class="info-link" href=""> <h4>Size Charts</h4></a>
+          <a class="info-link" href=""> <h4>Location Selector</h4></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="javascript.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
